@@ -1,7 +1,7 @@
 html {
   font-size: 10px;
-  background: url('img/catbackground.jpg');
-  background-size: cover;
+
+
 }
 body,html {
   margin: 0;
@@ -11,20 +11,35 @@ body,html {
 
 .wrap {
   min-height: 100vh;
+  /* background-size: cover;
+  background-image: url('img/catbackground.jpg'); */
+  padding-top: 30px;
+}
+
+.wrap::after {
+  content: "";
+  background: url('img/catbackground.jpg');
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 header {
   text-align: center;
   /* padding-top: 30px; */
-  background-color: #9491aa;
+  background-color: #BFBF3F;
   margin: 30px 200px 30px 200px ;
-  border: 2px solid gold;
+  border: .4rem solid black;
 
 
 }
 
 h2 {
-  color: #f44298;
+  color: black;
   font-size: 80px;
   font-family: 'Chewy', cursive;
   letter-spacing: .3rem;
@@ -34,7 +49,7 @@ h2 {
 }
 
 p {
-  color: #f44298;
+  color: black;
   font-size: 40px;
   font-family: 'Carter One', cursive;
   margin: 10px;
@@ -62,19 +77,20 @@ p {
   text-align: center;
   color: white;
   /* background: rgba(0,0,0,0.4); */
-  background:  #9491aa;
-  text-shadow: 0 0 .5rem black;
+  background:  #BFBF3F;
+
 }
 
 .playing {
   transform: scale(1.1);
-  border-color: #42f4bf;
+  border-color: #FB8136;
   box-shadow: 0 0 1rem #ffc600;
 }
 
 kbd {
   display: block;
   font-size: 4rem;
+  text-shadow: 0 0 .5rem black;
 }
 
 .sound {
@@ -82,8 +98,7 @@ kbd {
   font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: .3rem;
-  /* color: #ffc600; */
-  color: #42f4bf;
+  color: black;
 }
 
 footer {
